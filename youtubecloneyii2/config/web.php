@@ -32,6 +32,10 @@ $config = [
             // send all mails to a file by default.
             'useFileTransport' => true,
         ],
+        'mongodb' => [
+            'class' => '\yii\mongodb\Connection',
+            'dsn' => 'mongodb://localhost:27017/youtube.test',
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
